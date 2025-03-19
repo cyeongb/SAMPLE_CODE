@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js 파일시스템 시뮬레이터</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Node.js fs 메소드</h2>
+            <ul class="method-list">
+                <li onclick="insertCode('fs.readFile')">fs.readFile</li>
+                <li onclick="insertCode('fs.writeFile')">fs.writeFile</li>
+                <li onclick="insertCode('fs.appendFile')">fs.appendFile</li>
+                <li onclick="insertCode('fs.mkdir')">fs.mkdir</li>
+                <li onclick="insertCode('fs.readdir')">fs.readdir</li>
+                <li onclick="insertCode('fs.stat')">fs.stat</li>
+                <li onclick="insertCode('fs.unlink')">fs.unlink</li>
+                <li onclick="insertCode('fs.rmdir')">fs.rmdir</li>
+                <li onclick="insertCode('fs.rename')">fs.rename</li>
+                <li onclick="insertCode('fs.existsSync')">fs.existsSync</li>
+                <li onclick="insertCode('fs.readdirSync')">fs.readdirSync</li>
+                <li onclick="insertCode('fs.readFileSync')">fs.readFileSync</li>
+                <li onclick="insertCode('clear()')">콘솔 지우기</li>
+            </ul>
+        </div>
+        
+        <div class="main-content">
+            <h1>Node.js 파일시스템 시뮬레이터</h1>
+            <p>이 페이지는 Node.js의 <code>fs</code> 모듈 기능을 브라우저에서 시뮬레이션합니다. 실제 파일시스템에 접근하는 대신 메모리 내 가상 파일시스템을 사용합니다.</p>
+            
+            <div class="input-group">
+                <input type="text" id="codeInput" placeholder="실행할 파일시스템 코드 입력">
+                <button onclick="executeCode()">실행</button>
+                <button onclick="clearConsole()">콘솔 지우기</button>
+            </div>
+            
+            <div class="code-examples">
+                <h3>예제 코드</h3>
+                <pre><code>// 파일 읽기
+fs.readFile('/example.txt', 'utf8', (err, data) => {
+  if (err) {
+    console.error('Error:', err);
+    return;
+  }
+  console.log(data);
+});</code></pre>
+                
+                <pre><code>// 파일 쓰기
+fs.writeFile('/newfile.txt', '안녕하세요, 새 파일입니다!', 'utf8', (err) => {
+  if (err) {
+    console.error('Error:', err);
+    return;
+  }
+  console.log('파일이 성공적으로 작성되었습니다.');
+});</code></pre>
+            </div>
+            
+            <h3>콘솔 출력</h3>
+            <div class="console" id="console"></div>
+            
+            <h3>파일시스템 상태</h3>
+            <div class="file-tree" id="fileTree">
+                <!-- 파일시스템 트리 뷰 -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
