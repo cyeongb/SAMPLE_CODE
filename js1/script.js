@@ -10,7 +10,9 @@ fetchBtn.addEventListener('click', fetchData);
 // async/await를 사용하여 JSON 데이터 가져오기
 async function fetchData() {
     // URL 가져오기
-    const url = jsonUrlInput.value.trim();
+    //const url = jsonUrlInput.value.trim();
+    const url = "https://jsonplaceholder.typicode.com/users";  //url로 가져오기
+
     if (!url) {
         showError("URL을 입력해주세요.");
         return;
