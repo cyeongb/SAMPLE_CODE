@@ -48,7 +48,7 @@ async function fetchData() {
 function displayData(data) {
     if (Array.isArray(data)) {
         // 배열 데이터 처리
-        const html = data.map((item, index) => {
+        const html = data.map((item, index) => {  //화면에 표시하기 위한 작업.
             return `
                 <div class="user-item">
                     <h3>항목 ${index + 1}</h3>
