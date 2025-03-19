@@ -1,0 +1,42 @@
+[
+    {
+      "id": 1,
+      "name": "김철수",
+      "email": "chulsoo@example.com",
+      "age": 28,
+      "city": "서울",
+      "skills": ["JavaScript", "HTML", "CSS"]
+    },
+    {
+      "id": 2,
+      "name": "이영희",
+      "email": "younghee@example.com",
+      "age": 32,
+      "city": "부산",
+      "skills": ["Python", "Java", "SQL"]
+    },
+    {
+      "id": 3,
+      "name": "박지민",
+      "email": "jimin@example.com",
+      "age": 25,
+      "city": "인천",
+      "skills": ["React", "Node.js", "MongoDB"]
+    },
+    {
+      "id": 4,
+      "name": "정수민",
+      "email": "sumin@example.com",
+      "age": 30,
+      "city": "대전",
+      "skills": ["Vue.js", "PHP", "AWS"]
+    },
+    {
+      "id": 5,
+      "name": "강민지",
+      "email": "minji@example.com",
+      "age": 27,
+      "city": "광주",
+      "skills": ["Angular", "TypeScript", "Docker"]
+    }
+  ]
