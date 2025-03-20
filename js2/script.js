@@ -675,7 +675,7 @@ const fs = {
     unlink: (path, callback) => virtualFs.unlink(path, callback),
     rmdir: (path, options, callback) => virtualFs.rmdir(path, options, callback),
     rename: (oldPath, newPath, callback) => virtualFs.rename(oldPath, newPath, callback),
-    existsSync: (path) => virtualFs.existsSync(path),
+   // existsSync: (path) => virtualFs.existsSync(path),
     readdirSync: (path, options) => virtualFs.readdirSync(path, options),
     readFileSync: (path, options) => virtualFs.readFileSync(path, options)
 };
