@@ -296,6 +296,7 @@ class VirtualFileSystem {
     }
     
     // 재귀적 디렉토리 생성
+    // 주어진 경로의 모든 디렉토리를 한번에 생성
     mkdirRecursive(path, callback) {
         const parts = path.split('/').filter(p => p !== '');
         let currentPath = '/';
