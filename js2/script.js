@@ -916,24 +916,25 @@ console.error('Error:', err);
 return;
 }
 console.log('파일 이름이 변경되었습니다.');
-});`,
-        'fs.existsSync': `if (fs.existsSync('/example.txt')) {
-console.log('파일이 존재합니다.');
-} else {
-console.log('파일이 존재하지 않습니다.');
-}`,
-        'fs.readdirSync': `try {
-const files = fs.readdirSync('/');
-console.log('디렉토리 내용(동기):', files);
-} catch (err) {
-console.error('Error:', err);
-}`,
-        'fs.readFileSync': `try {
-const data = fs.readFileSync('/example.txt', 'utf8');
-console.log('파일 내용(동기):', data);
-} catch (err) {
-console.error('Error:', err);
-}`
+// });`
+        //,
+//         'fs.existsSync': `if (fs.existsSync('/example.txt')) {
+// console.log('파일이 존재합니다.');
+// } else {
+// console.log('파일이 존재하지 않습니다.');
+// }`,
+//         'fs.readdirSync': `try {
+// const files = fs.readdirSync('/');
+// console.log('디렉토리 내용(동기):', files);
+// } catch (err) {
+// console.error('Error:', err);
+// }`,
+//         'fs.readFileSync': `try {
+// const data = fs.readFileSync('/example.txt', 'utf8');
+// console.log('파일 내용(동기):', data);
+// } catch (err) {
+// console.error('Error:', err);
+// }`
     };
     
     codeInput.value = examples[code] || code;
