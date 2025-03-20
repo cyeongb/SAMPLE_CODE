@@ -676,8 +676,8 @@ const fs = {
     rmdir: (path, options, callback) => virtualFs.rmdir(path, options, callback),
     rename: (oldPath, newPath, callback) => virtualFs.rename(oldPath, newPath, callback),
    // existsSync: (path) => virtualFs.existsSync(path),
-    readdirSync: (path, options) => virtualFs.readdirSync(path, options),
-    readFileSync: (path, options) => virtualFs.readFileSync(path, options)
+   // readdirSync: (path, options) => virtualFs.readdirSync(path, options),
+   // readFileSync: (path, options) => virtualFs.readFileSync(path, options)
 };
 
 // Promise 기반 fs.promises API 시뮬레이션
